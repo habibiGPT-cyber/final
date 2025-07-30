@@ -1,65 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Daily Pulse Rewards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Pulse</title>
   <style>
-    <script>(s=>{s.dataset.zone='9643935',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
     body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #1f1f1f, #2b2b2b);
-      color: white;
-      text-align: center;
-      padding: 2em;
+      padding: 20px;
     }
     .container {
-      background: #333;
-      padding: 2em;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-      max-width: 400px;
+      max-width: 700px;
       margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
     }
-    .pulse {
-      animation: pulse 2s infinite;
-      color: #00ffcc;
-      font-weight: bold;
+    h1 {
+      color: #111;
     }
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 0.9; }
-      50% { transform: scale(1.05); opacity: 1; }
-      100% { transform: scale(1); opacity: 0.9; }
+    .ad {
+      margin: 20px 0;
+      padding: 10px;
+      background: #eaeaea;
+      text-align: center;
     }
-    button {
-      background: #00ffcc;
-      border: none;
-      padding: 1em 2em;
-      font-size: 1.2em;
-      color: #000;
+    .claim-box {
+      background: #222;
+      color: #0f0;
+      padding: 30px;
       border-radius: 10px;
-      margin-top: 1.5em;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .claim-btn {
+      background: #00cc99;
+      padding: 15px 25px;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
       cursor: pointer;
-      transition: background 0.3s;
-    }
-    button:hover {
-      background: #00ddb0;
-    }
-    .footer {
-      font-size: 0.75em;
-      margin-top: 2em;
-      color: #999;
     }
   </style>
+
+  <!-- 🤑 Monetag Script -->
+  <script>
+    (s => {
+      s.dataset.zone = '9643935';
+      s.src = 'https://al5sm.com/tag.min.js';
+    })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
+  </script>
 </head>
+
 <body>
   <div class="container">
-    <h1 class="pulse">🎉 Daily Pulse Rewards 🎉</h1>
-    <p>You’ve been randomly selected for a chance to win exclusive perks.</p>
-    <button onclick="location.href='https://example.com/ad-link'">CLAIM NOW</button>
-    <p class="footer">Powered by DailyPulse & Partners. T&C Apply.</p>
+    <h1>Daily Pulse</h1>
+    <p><strong>Massive Solar Flare Disrupts Global Communications</strong></p>
+    <p>Scientists warn of increased solar activity affecting satellites and internet infrastructure worldwide.</p>
+
+    <div class="ad">[ Advertisement Placeholder ]</div>
+
+    <p><strong>New AI Tool Can Simulate Human Emotions</strong></p>
+    <p>Researchers unveil a new language model that mimics emotional tone with stunning accuracy.</p>
+
+    <div class="claim-box">
+      <h2>🎉 Daily Pulse Rewards 🎉</h2>
+      <p>You’ve been randomly selected for a chance to win exclusive perks.</p>
+      <button class="claim-btn">CLAIM NOW</button>
+    </div>
   </div>
 </body>
 </html>
