@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Pulse Rewards</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #1f1f1f, #2b2b2b);
+      color: white;
+      text-align: center;
+      padding: 2em;
+    }
+    .container {
+      background: #333;
+      padding: 2em;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      max-width: 400px;
+      margin: auto;
+    }
+    .pulse {
+      animation: pulse 2s infinite;
+      color: #00ffcc;
+      font-weight: bold;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.9; }
+    }
+    button {
+      background: #00ffcc;
+      border: none;
+      padding: 1em 2em;
+      font-size: 1.2em;
+      color: #000;
+      border-radius: 10px;
+      margin-top: 1.5em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #00ddb0;
+    }
+    .footer {
+      font-size: 0.75em;
+      margin-top: 2em;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="pulse">🎉 Daily Pulse Rewards 🎉</h1>
+    <p>You’ve been randomly selected for a chance to win exclusive perks.</p>
+    <button onclick="location.href='https://example.com/ad-link'">CLAIM NOW</button>
+    <p class="footer">Powered by DailyPulse & Partners. T&C Apply.</p>
+  </div>
+</body>
+</html>
